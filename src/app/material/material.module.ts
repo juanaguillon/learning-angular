@@ -15,6 +15,7 @@ import { MaterialDemoComponent } from './material-demo/material-demo.component';
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
 import { MaterialListComponent } from './material-list/material-list.component';
+import { EstudiantesComponent } from './material-list/estudiantes/estudiantes.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MaterialListComponent } from './material-list/material-list.component';
     MaterialDemoComponent,
     MaterialButtonComponent,
     MaterialInputComponent,
-    MaterialListComponent
+    MaterialListComponent,
+    EstudiantesComponent
   ], 
   exports:[ 
     MatToolbarModule,

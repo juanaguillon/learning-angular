@@ -1,8 +1,4 @@
 <mat-list>
   <h3 mat-subheader>Names</h3>
-  <mat-list-item *ngFor="let name of names">
-    <img mat-line mat-list-avatar src="https://scontent.fbog4-1.fna.fbcdn.net/v/t1.0-9/16196015_10154888128487744_6901111466535510271_n.png?_nc_cat=103&oh=7a20122dd5acbd919e3c0fa790533a70&oe=5C5699E9" alt="Image-{{name.name}}">
-    <span mat-line>{{name.name}}</span>
-    <span mat-line>Updated</span>
-  </mat-list-item>
+  <app-estudiantes *ngFor="let name of names" [Estudiante]="name"></app-estudiantes>  
 </mat-list>
