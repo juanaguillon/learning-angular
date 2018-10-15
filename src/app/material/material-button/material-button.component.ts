@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialButtonComponent implements OnInit {
 
+  formulario = {
+    valida: true
+  }
+  
   constructor() { }
 
   ngOnInit() {
   }
+
+  // Event biding
+  onClicking(){
+    console.log('Evento de Click');
+  }
+
+  onClickingEvent( $event ){
+    console.log('The event is' , $event)
+  }
+  
 
 }

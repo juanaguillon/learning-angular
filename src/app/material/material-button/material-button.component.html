@@ -8,5 +8,7 @@
     </mat-panel-description>
 
   </mat-expansion-panel-header>
-  <button mat-button color="warn">Click Here!</button>
+  <button mat-button [disabled]="formulario.valida" color="primary">Click Here!</button>
+  <button mat-button (click)="onClicking()">Clicking</button>
+  <button mat-button (click)="onClickingEvent( $event )">Click with Event</button>
 </mat-expansion-panel>
