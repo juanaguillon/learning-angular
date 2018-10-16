@@ -21,5 +21,9 @@ export class MaterialListComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  onMouseOver( $event ){
+    console.log('Events is', $event);
+  }
 
 }

@@ -1,4 +1,4 @@
 <mat-list>
   <h3 mat-subheader>Names</h3>
-  <app-estudiantes *ngFor="let name of names" [Estudiante]="name"></app-estudiantes>  
+  <app-estudiantes *ngFor="let name of names" [Estudiante]="name" (emmited)="onMouseOver($event)"></app-estudiantes>  
 </mat-list>

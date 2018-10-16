@@ -7,8 +7,7 @@ import { Surface } from '../material-list.component'
 })
 export class EstudiantesComponent implements OnInit {
 
-  @Output()
-  emmited = new EventEmitter<Surface>()
+  @Output() emmited = new EventEmitter<Surface>()
   @Input() Estudiante: Surface;
 
   constructor() { }
@@ -16,5 +15,10 @@ export class EstudiantesComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick( e: Surface){
+    this.emmited.emit( e )
+  }
+
+  
 
 }
