@@ -1,7 +1,22 @@
-<mat-expansion-panel>
-  <mat-expansion-panel-header color="primary" >
-    <mat-panel-title>
-      Hello Wordl
-    </mat-panel-title>
-  </mat-expansion-panel-header>
-</mat-expansion-panel>
+<div>
+  <mat-card>
+    <h3>Atronomy Picrure Of The Day</h3>
+    <mat-card-header>
+      <img src="https://api.nasa.gov/images/logo.png" mat-card-avatar> 
+      <mat-card-title>
+        {{apod.title}}
+      </mat-card-title>
+      <mat-card-subtitle>{{apod.date}}</mat-card-subtitle>
+      
+      
+    </mat-card-header>
+    <img mat-card-image [src]="apod.url" [alt]="apod.title">
+    <mat-card-content>
+      
+      <p>
+        {{apod.explanation}}
+    
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
