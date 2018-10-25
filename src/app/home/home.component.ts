@@ -18,7 +18,12 @@ export class HomeComponent implements OnInit {
     this.nasaApi.getApod()
       .subscribe((data:Apod) => {
 
-        this.apod = data;
+        setTimeout(() => {
+          this.apod = data;          
+        }, 2500);
+      }, err => {
+        console.log('Error al conectar con el servidor');
+        console.log( err );
       })
   }
 

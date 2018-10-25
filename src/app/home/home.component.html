@@ -21,3 +21,7 @@
     </mat-card-footer>
   </mat-card>
 </div>
+
+<div class="spinner" *ngIf="!apod" >
+  <mat-progress-spinner mode="indeterminate" ></mat-progress-spinner>
+</div>
