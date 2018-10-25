@@ -1,10 +1,11 @@
 <h4>Inputs Básicos</h4>
 <div>
   <mat-form-field>
-    <input matInput type="text" placeholder="Get Text">
+    <input matInput type="text" placeholder="Get Text" [(ngModel)]="usuario" >
   </mat-form-field>
   
 </div>
+
 <h4>Prefijos y Sufijos</h4>
 <div>
   <mat-form-field>
@@ -20,3 +21,6 @@
     <mat-hint>Direccion de domicilio</mat-hint>
   </mat-form-field>
 </div>
+<pre>
+  {{usuario | json }}
+</pre>

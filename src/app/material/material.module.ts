@@ -1,6 +1,7 @@
 // Angular Core
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from  '@angular/forms';
 
 // Angular material Modules
 import { MatInputModule } from '@angular/material/input';
@@ -30,7 +31,8 @@ import { EstudiantesComponent } from './material-list/estudiantes/estudiantes.co
     MatInputModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule
   ],
   declarations: [
     MaterialDemoComponent,

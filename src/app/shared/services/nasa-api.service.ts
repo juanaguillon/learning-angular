@@ -21,7 +21,7 @@ export class NasaApiService {
 
   getApod(): Observable<Apod>{
 
-    return this.httpClient.get<Apod>( this.API_URL + '?api_key=' + this.API_KEY );
+    return this.httpClient.get<Apod>(`${this.API_URL}?api_key=${this.API_KEY}`);
   }
 
   
