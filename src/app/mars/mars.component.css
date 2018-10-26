@@ -1,8 +1,21 @@
 mat-card{
-  max-width: 800px;
   margin:15px auto;
   align-items: center;
 }
 mat-card img{
   width: 100%;
+}
+
+.card-select{
+  max-width: 800px;
+}
+
+.card-content{
+  display:inline-table;
+  max-width: 200px;
+  margin:5px 5px;
+  height: 300px;
+}
+.images-content{
+  text-align: center;
 }
