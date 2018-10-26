@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialDemoComponent } from './material/material-demo/material-demo.component';
 import { HomeComponent } from './home/home.component';
+import { MarsComponent } from './mars/mars.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path:'mars',
+    component: MarsComponent
   }
 
 ]

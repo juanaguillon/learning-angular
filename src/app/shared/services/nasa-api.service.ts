@@ -15,6 +15,7 @@ export class NasaApiService {
   
   readonly API_URL = 'https://api.nasa.gov/planetary/apod';
   readonly API_KEY = 'DEMO_KEY';  
+  readonly MARS_URL = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000';
 
   // Dependency injection: HTTPClient
   constructor( private httpClient:HttpClient ) { }
@@ -22,6 +23,10 @@ export class NasaApiService {
   getApod(): Observable<Apod>{
 
     return this.httpClient.get<Apod>(`${this.API_URL}?api_key=${this.API_KEY}`);
+  }
+
+  getMarsImages():Observable<any>{
+    return this.httpClient.get(`${this.MARS_URL}&api_key=${this.API_KEY}`);
   }
 
   
