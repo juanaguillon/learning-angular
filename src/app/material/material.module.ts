@@ -11,8 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card'
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
 // Material Components modules
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
 import { MaterialButtonComponent } from './material-button/material-button.component';
@@ -32,7 +32,8 @@ import { EstudiantesComponent } from './material-list/estudiantes/estudiantes.co
     MatListModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule
   ],
   declarations: [
     MaterialDemoComponent,
@@ -49,7 +50,8 @@ import { EstudiantesComponent } from './material-list/estudiantes/estudiantes.co
     MatInputModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSelectModule
    ]
 })
 export class MaterialModule { }

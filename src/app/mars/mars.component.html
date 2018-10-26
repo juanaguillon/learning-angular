@@ -1,7 +1,16 @@
 <div>
-  <mat-card *ngFor="let marImage of marsImages" >
-    <mat-card-title>Title</mat-card-title>
-    <mat-card-subtitle>Fecha</mat-card-subtitle>
+  <mat-card>
+    <mat-form-field>
+      <mat-select placeholder="Select Your Camera" >
+        <mat-option *ngFor="let camera of cameras" [value]="camera" (click)="onClick(camera)" >
+          {{camera}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </mat-card>
-  <img mar-card-image src="" alt="">
+  <mat-card *ngFor="let marImage of marsImages" >
+    <mat-card-title>{{marImage.rover.name}}</mat-card-title>
+    <img mar-card-image [src]="marImage.img_src" alt="">
+    <mat-card-subtitle>{{marImage.earth_date}}</mat-card-subtitle>
+  </mat-card>
 </div>

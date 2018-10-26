@@ -25,8 +25,8 @@ export class NasaApiService {
     return this.httpClient.get<Apod>(`${this.API_URL}?api_key=${this.API_KEY}`);
   }
 
-  getMarsImages():Observable<any>{
-    return this.httpClient.get(`${this.MARS_URL}&api_key=${this.API_KEY}`);
+  getMarsImages( camera ):Observable<any>{
+    return this.httpClient.get(`${this.MARS_URL}&camera=${camera}&api_key=${this.API_KEY}`);
   }
 
   
